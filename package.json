@@ -1,0 +1,21 @@
+{
+  "name": "test-action",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --trace-warnings --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "PROPRIETARY",
+  "dependencies": {
+    "meow": "^10.1.3"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {}
+  }
+}
