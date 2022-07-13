@@ -1,0 +1,13 @@
+name: issue-comment
+
+on: 
+  issue_comment:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print the comment
+        run: echo "issue is number '${{ github.event.issue.number }}' and body is '${{ github.event.comment.body}}'"
