@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: print the comment
-        run: echo "New issue! '${{ github.event.issue.number }}' with title '${{ github.event.issue.title }}' and body is '${{ github.event.issue.body}}'"
+      - name: node script
+        run: node ./newissue.js ${{ github.event.issue.number }} "${{ github.event.issue.title }}" "${{ github.event.issue.body}}"
