@@ -1,0 +1,13 @@
+name: issue
+
+on: 
+  issue_comment:
+    types: [opened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print the comment
+        run: echo "New issue! '${{ github.event.issue.number }}' with title '${{. github.event.issue.title }}' and body is '${{github.event.issue.body}}'"
