@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: print the comment
-        run: echo "New issue! '${{ github.event.issue.number }}' with title '${{. github.event.issue.title }}' and body is '${{github.event.issue.body}}'"
+        run: echo "New issue! '${{ github.event.issue.number }}' with title '${{ github.event.issue.title }}' and body is '${{ github.event.issue.body}}'"
